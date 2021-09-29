@@ -1,0 +1,46 @@
+(function($) {
+    window.booklyCustomerProfile = function(options) {
+       $('.ab--show-past').on('click', function(e) {
+           e.preventDefault();
+           var $self = $(this),
+               $table = $self.prevAll('table.ab-appointments-table'),
+               ladda = Ladda.create(this);
+           ladda.start();
+           $.get(options.ajaxurl, {action: 'bookly_get_past_appointments', columns: $table.data('columns'), custom_fields: $table.data('custom_fields'), page: $table.data('page') + 1 }, function () {
+           }, 'json').done(function (resp) {
+               ladda.stop();
+               if (resp.data.more) {
+                   $self.find('span.ab_label').html(BooklyL10n.show_more);
+               } else {
+                   $self.remove();
+               }
+               if (resp.data.html) {
+                   $table.find('tr.bookly--no-appointments').remove();
+                   $(resp.data.html).hide().appendTo($table).show('slow');
+                   $table.data('page', $table.data('page') + 1 );
+               }
+           });
+       });
+    };
+})(jQuery);
+/*
+     FILE ARCHIVED ON 09:03:42 Mar 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:49:08 Sep 17, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 1.785
+  esindex: 0.01
+  exclusion.robots.policy: 0.18
+  load_resource: 731.64
+  LoadShardBlock: 1496.447 (3)
+  PetaboxLoader3.resolve: 694.011
+  PetaboxLoader3.datanode: 1528.837 (4)
+  CDXLines.iter: 16.675 (3)
+  exclusion.robots: 0.192
+  captures_list: 1518.495
+*/

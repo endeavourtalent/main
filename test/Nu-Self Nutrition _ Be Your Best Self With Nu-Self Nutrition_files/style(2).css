@@ -1,0 +1,142 @@
+/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("/web/20190310090205cs_/https://nu-selfnutrition.com.au/wp-content/themes/bridge/style.css");
+
+.testimonials_c_holder .testimonial_content_inner {
+	background-color: transparent!important;
+}
+
+#nav-menu-item-15914 > a > span:nth-child(2) {
+	background: #29c4b7;
+    padding: 10px 20px;
+}
+
+#nav-menu-item-15914 > a > span:nth-child(2):hover {
+	background: #fff;
+}
+
+.header_top {
+	background:rgba(10, 10, 10, .6)!important;
+	border-top:2px solid #29c4b7;
+}
+
+.header_top a {
+	background: #29c4b7;
+    padding: 10px 20px;
+    margin:10px;
+    font-weight: 500;
+}
+
+.header_top a:hover {
+	background-color:#fff;
+}
+
+.header_top a:last-child {
+    margin-right:54px;
+}
+
+.body_content_map p{
+	color:#000;
+}
+
+.latest_post_two_holder .latest_post_two_inner {
+	background-color: #000!important;
+}
+
+.footer_top .textwidget, .footer_top a, .footer_top li, .footer_top p, .footer_top span {
+	text-align: center;
+}
+
+#booking-form-height .wpb_text_column.wpb_content_element {
+	min-height:546px;
+}
+
+.map-message blockquote {
+	margin-top: -54px;
+	background-color: rgba(0,0,0,0.85);
+}
+
+@media (max-width:1507px){
+	nav.main_menu.right {
+		float:none;
+		width:1000px;
+		margin:140px auto 0;
+	}
+
+	nav.main_menu > ul > li > a {
+		line-height: 70px!important;
+	}
+
+	.title_holder{
+		height: 120px!important;
+	}
+
+	
+
+	.header_inner_left, .logo_wrapper, .q_logo {
+		width:100%;
+	}
+
+	.q_logo a {
+		width:374px;
+		margin:0 auto;
+	}
+}
+
+@media (max-width:1130px){
+	.img-spacer {
+		height:450px!important;
+	}
+}
+
+@media (max-width:1100px){
+	.q_logo a{
+		height: 95px!important;
+	}
+
+	nav.mobile_menu{
+		background-color: #000!important;
+	}
+
+	.separator.transparent {
+		height: 20px!important;
+	}
+}
+
+@media (max-width: 645px){
+	#spacing .vc_empty_space{
+		height:56px!important;
+	}
+
+	#booking-form-height .wpb_text_column.wpb_content_element {
+		min-height:430px;
+	}
+}
+/*
+     FILE ARCHIVED ON 09:02:05 Mar 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:49:07 Sep 17, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 16.899 (3)
+  esindex: 0.01
+  exclusion.robots.policy: 0.22
+  PetaboxLoader3.resolve: 915.0 (2)
+  LoadShardBlock: 115.33 (3)
+  load_resource: 934.343
+  PetaboxLoader3.datanode: 99.283 (4)
+  RedisCDXSource: 15.402
+  captures_list: 150.714
+  exclusion.robots: 0.234
+*/

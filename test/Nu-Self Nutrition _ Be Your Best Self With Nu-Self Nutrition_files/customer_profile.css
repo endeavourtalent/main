@@ -1,0 +1,74 @@
+.bookly-customer-appointment-list {
+    overflow: auto;
+}
+
+.bookly-customer-appointment-list h2 {
+    margin: 20px 0;
+    font-size: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid silver;
+}
+
+.bookly-customer-appointment-list .ab-appointments-table {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.bookly-customer-appointment-list .ab-appointments-table th {
+    background: #ddd;
+    font-size: 14px;
+    padding: 5px;
+    border: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.bookly-customer-appointment-list table.ab-appointments-table td {
+    font-size: 14px;
+    padding: 5px !important;
+    background: #eee;
+    text-align: left !important;
+    vertical-align: top !important;
+    border: 1px solid silver;
+}
+
+.bookly-customer-appointment-list .ab-appointments-table td .ab-btn {
+    padding: 5px 10px!important;
+    width: auto;
+    min-width: 0;
+}
+
+.bookly-customer-appointment-list .ab-appointments-table td .ab-btn span {
+    font-size: 12px !important;
+}
+
+.bookly-customer-appointment-list .ab-btn {
+    font-family: inherit;
+}
+
+.bookly-customer-appointment-list ul.bookly-extras {
+    list-style: disc outside !important;
+    margin-bottom: 0 !important;
+}
+/*
+     FILE ARCHIVED ON 08:59:19 Mar 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:49:05 Sep 17, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.019
+  exclusion.robots.policy: 0.193
+  LoadShardBlock: 91.087 (3)
+  RedisCDXSource: 1.024
+  CDXLines.iter: 20.166 (3)
+  PetaboxLoader3.datanode: 99.97 (4)
+  captures_list: 116.179
+  exclusion.robots: 0.207
+  PetaboxLoader3.resolve: 226.738
+  load_resource: 258.145
+*/
