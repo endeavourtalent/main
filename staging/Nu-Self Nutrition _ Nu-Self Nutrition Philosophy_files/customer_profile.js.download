@@ -1,0 +1,59 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function($) {
+    window.booklyCustomerProfile = function(options) {
+       $('.ab--show-past').on('click', function(e) {
+           e.preventDefault();
+           var $self = $(this),
+               $table = $self.prevAll('table.ab-appointments-table'),
+               ladda = Ladda.create(this);
+           ladda.start();
+           $.get(options.ajaxurl, {action: 'bookly_get_past_appointments', columns: $table.data('columns'), custom_fields: $table.data('custom_fields'), page: $table.data('page') + 1 }, function () {
+           }, 'json').done(function (resp) {
+               ladda.stop();
+               if (resp.data.more) {
+                   $self.find('span.ab_label').html(BooklyL10n.show_more);
+               } else {
+                   $self.remove();
+               }
+               if (resp.data.html) {
+                   $table.find('tr.bookly--no-appointments').remove();
+                   $(resp.data.html).hide().appendTo($table).show('slow');
+                   $table.data('page', $table.data('page') + 1 );
+               }
+           });
+       });
+    };
+})(jQuery);
+
+}
+/*
+     FILE ARCHIVED ON 09:03:42 Mar 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:56:01 Nov 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  cdx.remote: 0.096
+  captures_list: 95.744
+  exclusion.robots: 0.169
+  load_resource: 809.967
+  LoadShardBlock: 53.48 (3)
+  CDXLines.iter: 25.179 (3)
+  esindex: 0.012
+  PetaboxLoader3.datanode: 844.093 (4)
+  exclusion.robots.policy: 0.157
+*/
