@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+ * This is main css file for print view.
+ -------------------------------------------------------------------*/
+@media only print {
+  header, footer,
+  .title_outer,
+  .portfolio_print,
+  header.page_header {
+    display: none !important;
+  }
+  .container_inner {
+    max-width: 80%;
+  }
+  div[class*='columns'] > div[class^='column'] {
+    float: none;
+    width: 100%;
+  }
+  html,
+  body,
+  .wrapper,
+  .wrapper-inner .container,
+  .container-inner {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    top: 0 !important;
+  }
+}
+/*
+     FILE ARCHIVED ON 09:00:34 Mar 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:56:00 Nov 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 221.639
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.077
+  RedisCDXSource: 2.692
+  esindex: 0.006
+  LoadShardBlock: 194.331 (3)
+  PetaboxLoader3.datanode: 196.868 (4)
+  CDXLines.iter: 21.662 (3)
+  load_resource: 85.49
+  PetaboxLoader3.resolve: 50.179
+*/
