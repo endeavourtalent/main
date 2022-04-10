@@ -7,9 +7,12 @@
     <title>ET Custom</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -19,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#About" data-bs-target="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Open Positions</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://endeavourtalent.com/contact/">Contact</a></li>
                 </ul>
             </div>
@@ -42,20 +45,154 @@
                     <p style="text-align: center;color: var(--bs-body-bg);">We work with the most talented medical and health specialists and place them in the best positions in reputable private practices across Australia. This all starts with a conversation and we are extremely motivated to help our candidates pursue their career progression.<br><br>We specialize in recruitment for all types of medical and health professionals within the following areas:<br></p>
                 </div>
             </div>
-            <div class="row justify-content-center" style="background: url(&quot;assets/img/hero-bg.png&quot;);">
-                <div class="col-sm-12 col-md-5 col-lg-5"><img class="img-fluid" src="assets/img/doctors%20350px.jpg"></div>
-                <div class="col-auto col-sm-12 col-md-auto col-lg-7 align-self-center my-auto align-self-sm-center my-sm-auto align-self-md-center align-self-lg-center">
-                    <ul style="color: var(--bs-body-bg);">
-                        <li class="invisible">General Practitioners</li>
-                        <li>General Practitioners</li>
-                        <li style="color: var(--bs-body-bg);">Radiologists</li>
-                        <li>Dentists</li>
-                        <li>Physiotherapists</li>
-                        <li>Other Allied Health Staff</li>
-                        <li>Business Ownership/Partnership</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="row justify-content-center" style="background: url(&quot;assets/img/hero-bg.png&quot;);"><div class="col-auto col-sm-12 col-md-auto col-lg-7 align-self-center my-auto align-self-sm-center my-sm-auto align-self-md-center align-self-lg-center"></div>
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - A Pen by endeavourtalent</title>
+  
+  
+  
+  
+<style>
+.var-highlight{
+	color: #0000FF;
+}
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+		font-size: 2em;
+		margin: 0;
+		font-family: "Courier New";
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <pre id="typewriter"><span class="var-highlight">General Practitioners,
+Radiologists,
+Dentists,
+Physiotherapists,
+Other Allied Health Staff,
+Business Ownership/Partnership
+</pre>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  
+      <script id="rendered-js" >
+function setupTypewriter(t) {
+  var HTML = t.innerHTML;
+
+  t.innerHTML = "";
+
+  var cursorPosition = 0,
+  tag = "",
+  writingTag = false,
+  tagOpen = false,
+  typeSpeed = 100,
+  tempTypeSpeed = 0;
+
+  var type = function () {
+
+    if (writingTag === true) {
+      tag += HTML[cursorPosition];
+    }
+
+    if (HTML[cursorPosition] === "<") {
+      tempTypeSpeed = 0;
+      if (tagOpen) {
+        tagOpen = false;
+        writingTag = true;
+      } else {
+        tag = "";
+        tagOpen = true;
+        writingTag = true;
+        tag += HTML[cursorPosition];
+      }
+    }
+    if (!writingTag && tagOpen) {
+      tag.innerHTML += HTML[cursorPosition];
+    }
+    if (!writingTag && !tagOpen) {
+      if (HTML[cursorPosition] === " ") {
+        tempTypeSpeed = 0;
+      } else
+      {
+        tempTypeSpeed = Math.random() * typeSpeed + 50;
+      }
+      t.innerHTML += HTML[cursorPosition];
+    }
+    if (writingTag === true && HTML[cursorPosition] === ">") {
+      tempTypeSpeed = Math.random() * typeSpeed + 50;
+      writingTag = false;
+      if (tagOpen) {
+        var newSpan = document.createElement("span");
+        t.appendChild(newSpan);
+        newSpan.innerHTML = tag;
+        tag = newSpan.firstChild;
+      }
+    }
+
+    cursorPosition += 1;
+    if (cursorPosition < HTML.length - 1) {
+      setTimeout(type, tempTypeSpeed);
+    }
+
+  };
+
+  return {
+    type: type };
+
+}
+
+var typer = document.getElementById('typewriter');
+
+typewriter = setupTypewriter(typewriter);
+
+typewriter.type();
+//# sourceURL=pen.js
+    </script></div>
         </div>
     </section>
     <section class="about" style="text-align: center;background: url(&quot;assets/img/hero-bg.png&quot;);">
@@ -67,6 +204,7 @@
             </div>
         </div>
     </section>
+    <section></section>
     <footer class="footer-basic">
         <ul class="list-inline">
             <li class="list-inline-item"><a href="https://endeavourtalent.com/contact/">Contact Us</a></li>
@@ -74,6 +212,8 @@
         <p class="copyright">Endeavour Talent© 2022</p>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
 </body>
 
 </html>
