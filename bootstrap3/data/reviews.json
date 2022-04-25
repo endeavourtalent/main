@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Jason Johns",
+    "title": "Radiologist",
+    "imageUrl": "./george-logan.jpg",
+    "description": "I worked with the team at Endeavour to find my dream job. I was looking to relocate to a new area and they were able to help me throughout the entire process. It was simply seamless. Would highly reacommend!"
+  },
+  {
+    "id": 2,
+    "name": "Susan Roche",
+    "title": "Owner - Southern Medical Associates ",
+    "imageUrl": "./susan-roche.jpg",
+    "description": "They are simply the best. We needed several positions filled quickly and they were able to find provide us high calibur candidantes. Our poisitions were filled in half the time it normally takes us."
+  },
+  {
+    "id": 3,
+    "name": "Alan Wang",
+    "title": "Dentist",
+    "imageUrl": "./alan-wang.jpg",
+    "description": "Endeavour made the job search process such a breeze. I reached out and they did the rest. I had my first interview within 3 days and found a practice I fell in love with."
+  }
+]

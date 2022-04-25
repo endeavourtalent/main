@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/handlers.js"></script>
+    <script type="module" src="./js/reviews.service.js"></script>
+    <title>Endeavour Talent</title>
+  </head>
+  <div id="layout-grid">
+    <header>
+      <div id="logo">
+        <img src="./assets/ship-wheel.svg" alt="ship-wheel-logo" />
+        <span>Endeavour Talent</span>
+      </div>
+      <nav>
+        <ul id="contact-btn">
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <main>
+        <section id="hero">
+          <div class="banner-left">
+            <h1>We Value Quality Health Care</h1>
+            <p>
+              We believe great care begins with amazing people. That's why we
+              make it our mission to match the right person to the right job.
+            </p>
+            <button id="call-to-action-btn">Let's Connect</button>
+          </div>
+          <div class="banner-right">
+            <img src="./assets/ship.svg" alt="sailing-ship" />
+          </div>
+        </section>
+        <section id="services">
+          <h1>Australia's Premier Boutique Medical Recruiting Firm</h1>
+          <div class="row">
+            <div id="ship-wheel-container">
+              <img src="./assets/ship-wheel-blue.svg" alt="ships-wheel-icon" />
+            </div>
+            <div id="services-description">
+              <p>
+                We work with the most talented medical and health specialists
+                and place them in the best positions in reputable private
+                practices across Australia. This all starts with a conversation
+                and we are extremely motivated to help our candidates pursue
+                their career progression. We specialize in recruitment for all
+                types of medical and health professionals within the following
+                areas:
+              </p>
+              <ul>
+                <li>General Practitioners</li>
+                <li>Radiologists</li>
+                <li>Dentists</li>
+                <li>Physiotherapists</li>
+                <li>Other Allied Health staff</li>
+                <li>Business Ownership/Partnership</li>
+              </ul>
+              <p>
+                Our goal is to provide impeccable service throughout the
+                recruitment process whilst remaining honest and transparent with
+                both our candidates and clients. We won’t just place a candidate
+                in any role, we specialize in matching what a client desires to
+                a candidates wish list.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="reviews">
+          <h1>What our Customers are Saying</h1>
+        </section>
+        <section id="jobs"></section>
+      </main>
+    </body>
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Endeavour Talent
+      </p>
+    </footer>
+  </div>
+  <div id="contact-form-container" class="hide">
+    <div class="contact-form-header">
+      <h1>Lets Connect</h1>
+      <span id="contact-form-close-btn">X</span>
+    </div>
+    <form id="contact-form" action="">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="nameInput" type="text" name="name" autofocus />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="emailInput" type="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="notes">How can we serve you?</label>
+        <textarea id="notesInput" rows="8" name="Notes"></textarea>
+      </div>
+      <button id="submit-contact-form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="backdrop" class="hide"></div>
+  <div id="alert" class="hide"></div>
+</html>
